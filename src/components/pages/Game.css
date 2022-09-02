@@ -1,0 +1,138 @@
+:root {
+    --color-lightblue: #0599f5;
+}
+
+section {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: var(--color-lightblue);
+    background-attachment: fixed;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.challenge {
+    text-align: left;
+    font-size: 2em;
+}
+
+.question {
+    max-width: 800px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--color-lightblue);
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.question p {
+    color: #000;
+    text-align: justify;
+}
+
+.question__text {
+    text-indent: 2em;
+}
+
+.question__ask {
+    margin: 20px 0 10px;
+}
+
+.doors {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.doors__door {
+    width: 30%;
+    height: auto;
+    position: relative;
+    border: none;
+    transition: .3s linear;
+}
+
+.doors__door:hover {
+    transform: scale(1.1);
+}
+
+.doors__img {
+    width: 100%;
+    height: auto;
+}
+
+.doors__door p {
+    margin: 0 auto;
+    display: inline;
+    position: relative;
+    top: -5%;
+}
+
+.change {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.change__button {
+    width: 40%;
+    height: 80px;
+    color: #fff;
+    background-color: var(--color-lightblue);
+}
+
+.finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why {
+    margin-top: 20px;
+    width: 40%;
+    height: 80px;
+    color: #fff;
+    background-color: var(--color-lightblue);
+}
+
+@media (max-width: 850px) {
+    .challenge {
+        font-size: 1.5em;
+    }
+
+    .doors {
+        height: fit-content;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .doors__door {
+        width: 35%;
+    }
+
+    .doors__door:nth-child(3) {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .doors__door p {
+        top: 0;
+    }
+
+    .change__button, .why {
+        width: 45%;
+    }
+}
