@@ -1,0 +1,17 @@
+.text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.text_title {
+    font-size: 3em;
+}
+
+.text_emphasis {
+    color: red;
+}
+
+.text_content {
+    text-indent: 2em;
+    text-align: justify;
+}
